@@ -1,5 +1,9 @@
 class PpmController < ApplicationController
-	before_filter :set_default_response_format
+	before_filter :set_default_response_format, :except => [:readme]
+	
+	def readme
+	end
+
 	def pjlMyTasks
 		id = params[:id]
 		if id

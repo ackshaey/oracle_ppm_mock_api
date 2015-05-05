@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root 'ppm#pjlmytasks'
+  root 'ppm#readme'
+  get 'ppm/readme'
   get 'ppm/pjlMyTasks'
   get 'ppm/pjlFollowedTasks'
   get 'ppm/pjlMyTasks/:id' => 'ppm#pjlMyTasks'
